@@ -29,7 +29,6 @@ button {
 
 #hints-container {
     /* Adjust width and table layout as needed */
-    width: 50%; /* Adjust as needed */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -65,4 +64,13 @@ button {
 
 .lose-message {
     color: #e74c3c; /* Red for loss */
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+    #hints-container {
+        width: 100%;
+    }
 }
