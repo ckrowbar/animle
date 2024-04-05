@@ -324,7 +324,7 @@ function handleGuess() {
     let guess = document.getElementById("animal-guess").value.toLowerCase();
     guessesRemaining--;
 
-    if (guess === currentAnimal.name) {
+    if (guess.toLowerCase() === currentAnimal.name.toLowerCase()) {
         document.getElementById("result").textContent = "You win!";
         document.getElementById("result").classList.add("win-message");
         document.getElementById("submit-guess").disabled = true;
