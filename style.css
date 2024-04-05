@@ -1,0 +1,68 @@
+body {
+    font-family: "VT323", monospace; /* Playful monospace font */
+    text-align: center;
+    margin: 20px;
+    background-color: #ffffff; /* Light orange background */
+}
+
+h1 {
+    color: #e74c3c; /* Reddish orange */
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+button {
+    padding: 10px 15px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    margin-top: 15px;
+}
+
+button {
+    background-color: #e74c3c; /* Darker orange */
+    color: white;
+    cursor: pointer;
+}
+
+#hints-container {
+    /* Adjust width and table layout as needed */
+    width: 50%; /* Adjust as needed */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-collapse: collapse; /* Make table borders touch */
+}
+
+#hints-container td {
+    vertical-align: top;
+    border: 0px solid #ccc; /* Adds borders to table cells */
+    padding: 8px;
+}
+
+#hints-container td:first-child {
+    text-align: right;
+    font-weight: bold; /* Make category labels bold */
+}
+
+#hints-container td:nth-child(2) {
+    text-align: left;
+}
+
+#result {
+    /* Assuming your result message has an id */
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.win-message {
+    color: #2ecc71; /* Success green */
+}
+
+.lose-message {
+    color: #e74c3c; /* Red for loss */
+}
